@@ -1,8 +1,3 @@
-
-/* =========================
-   1. CÀI ĐẶT CHUNG
-========================= */
-
 * {
     margin: 0;
     padding: 0;
@@ -48,10 +43,6 @@ button {
     display: none;
 }
 
-/* =========================
-   2. TRÁI TIM BAY
-========================= */
-
 .heart {
     position: fixed;
     bottom: -50px;
@@ -72,11 +63,6 @@ button {
         opacity: 0;
     }
 }
-
-/* =========================
-   3. PHONG BÌ
-========================= */
-
 .envelope {
     position: relative;
     width: 440px;
@@ -95,11 +81,6 @@ button {
     border-radius: 12px;
     z-index: 1;
 }
-
-/* =========================
-   4. LÁ THƯ
-========================= */
-
 .letter {
     position: absolute;
 
@@ -135,16 +116,9 @@ button {
 .letter p {
     font-size: 17px;
 }
-
-/* Kéo thư ra */
-
 .envelope.letter-out .letter {
     transform: translateY(-120px);
 }
-
-/* =========================
-   5. MẶT TRƯỚC PHONG BÌ
-========================= */
 
 .envelope-front {
     position: absolute;
@@ -163,10 +137,6 @@ button {
 
     z-index: 3;
 }
-
-/* =========================
-   6. NẮP PHONG BÌ
-========================= */
 
 .envelope-flap {
     position: absolute;
@@ -189,17 +159,10 @@ button {
 
     z-index: 5;
 }
-
-/* Mở nắp */
-
 .envelope.open .envelope-flap {
     transform: rotateX(180deg);
     z-index: 1;
 }
-
-/* =========================
-   7. TRÁI TIM GIỮA PHONG BÌ
-========================= */
 
 .heart-seal {
     position: absolute;
@@ -218,11 +181,6 @@ button {
 .envelope.open .heart-seal {
     opacity: 0;
 }
-
-/* =========================
-   8. RESPONSIVE
-========================= */
-
 @media (max-width: 500px) {
     .envelope {
         transform: scale(0.8);
